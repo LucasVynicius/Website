@@ -31,6 +31,7 @@ a, a:hover{
 
 .container-fluid{
     background: #bdbaba;
+    height: 100%;
 }
 
 .container h1{
@@ -54,4 +55,19 @@ a, a:hover{
     height: 90px;
     padding-top: 20px;
     font-size: 25px;
+}
+
+.dsmovie-container h1{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: 'Open Sans';
+    font: 700;
+    padding-left: 5em;
+    margin: 0em;
+}
+
+.dsmovie{
+    height: 400px;
+    width: 600px;
 }
