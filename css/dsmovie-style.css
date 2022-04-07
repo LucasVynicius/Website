@@ -1,0 +1,224 @@
+/* style do ds */
+
+@import url('https://fonts.googleapis.com/css2? family= Open+Sans:wght@300;400;700 & display=swap');
+
+:root{
+    --bg-gray: #ddd;
+    --text-gray: #4a4a4a;
+    --color-primary: #4d41c0;
+    --white: #fff;
+    --text-light-gray: #aaa;
+    --star-yellow: #ffbb3a;
+}
+
+/*pega todos elementos da pagina */
+/*Seletor Global "*" */
+*{
+    /*para as bordas dos elementos não ocupe area */
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+html, body{
+    background-color: #E8E8E8;
+}
+
+header{
+    background: #4D41C0;
+    color: #ffff;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/*O atributo hover é aquele usado quando passamos o cursor do mouse por cima de algum elemento na página html*/
+a , a:hover {
+    /*unset sem cor definida*/
+    color: unset;
+    /*tirando o sublinhado*/
+    text-decoration:none;
+}
+
+.dsmovie-contact-container{
+    display: flex;
+    align-items: center;
+}
+
+.dsmovie-contact-container img{
+    margin-right: 10px;
+}
+
+#dsmovie-card-list{
+    /*padding espaçamento interno altura e largura*/
+    padding: 0px 10px;
+}
+
+.dsmovie-card{
+    width: 100%;
+    /*espaçamento*/
+    padding: 15px 0;
+
+}
+
+.dsmovie-card img{
+    /*Largura*/
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.dsmovie-card-desription{
+    padding: 10px 20px 20px 20px;
+    display: flex;
+    /*para deixar um abaixo do outro em forma de colunas*/
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 0 0 8px 8px;
+    /*altura minima*/
+    min-height: 150px;
+    justify-content: space-between;
+}
+
+.dsmovie-card-desription h3{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.dsmovie-card-description-botton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dsmovie-card-description-botton h4{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--star-yellow);
+}
+
+.dsmovie-card-description-botton img {
+    width: 22px;
+}
+
+.dsmovie-card-description-botton p{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text-light-gray);
+    margin-bottom: 10px;
+}
+
+/*-------------- :hover efeito do mouse */
+.dsmovie-btn, .dsmovie-btn:hover{
+    width: 180px;
+    height: 40px;
+    background-color: var(--color-primary);
+    color: var(--white);
+    font-size: 14px;
+    /*tamanho da fonte*/
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 0;
+
+}
+
+.dsmovie-form-container{
+    padding: 40px 0;
+    max-width: 480px;
+}
+
+.dsmovie-form-description{
+    background-color: var(--white);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 8px 8px;
+}
+
+.dsmovie-form{
+    width: 100%;
+}
+
+.dsmovie-card-desription h3{
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.dsmovie-form-group {
+    margin-bottom: 20px;
+}
+
+.dsmovie-form-group label {
+    font-size: 12px;
+    color: var(--text-light-gray);
+}
+
+.dsmovie-form-btn-container {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 28px;
+}
+
+.dsmovie-pagination-container{
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dsmovie-pagination-box{
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dsmovie-pagination-box p{
+    margin: 0;
+    font-size: 12px;
+    color: var(--color-primary);
+    font-weight: 400;
+}
+
+.dsmovie-pagination-box button{
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Pintar o svg da cor que precisa*/
+.dsmovie-pagination-box button img{
+    filter: brightness(0%) saturate(100%) invert(30%) sepia(14%) saturate(7167%) hue-rotate(227deg) brightness(86%) contrast(100%);
+    
+}
+
+.dsmovie-pagination-box button:disabled{
+    border-color: 1px solid var(--text-light-gray);
+}
+
+.dsmovie-pagination-box button:disabled img{
+    filter: unset;
+}
+
+/*Rotacionando imagens*/
+.dsmovie-flip-horizontal{
+    transform: rotate(180deg);
+}

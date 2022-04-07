@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,300&display=swap');
 
 *{
-    font-family: 'Kaushan Script';
+    font-family: 'Open Sans';
+    margin: 0;
+    padding: 0;
 }
 
 header{
@@ -17,29 +19,41 @@ a, a:hover{
     flex-direction: column;
     padding-left: 0;
     padding-bottom: 0;
-    font-size: 2.0rem;
+    font-size: 1.5rem;
 }
 
-.nav-link{
-    display: flex;
-    flex-direction: column;
-    padding-left: 0;
-    padding-bottom: 0;
-    font-size: 1.20rem;
-    color: #fff;
+
+body main{
+    max-height: 100%;
 }
 
 .container-fluid{
     background: #bdbaba;
-    height: 100%;
+    height: 105%;
 }
 
-.container h1{
+.container-row h1{
     color: rgb(12, 11, 11);
+    top: 0;
+    left: 0;
+    position: relative;
+    display: grid;
 }
 
-.img-fluid{
-    width: 300px;
+.profile{
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-text{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.profile-text a{
+    text-decoration: none;
+    color: black;
 }
 
 .text-left{
@@ -48,26 +62,23 @@ a, a:hover{
     font: bold;
 }
 
-.footer{
-    position: relative;
-    color: #fff;
-    clear: both;
-    height: 90px;
-    padding-top: 20px;
+.card-container{
+    width: 100%;
+    padding: 15px 10px;
+}
+
+.ds-card-container{
+    width: 100%;
+
+}
+
+.row{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer div p{
     font-size: 25px;
 }
 
-.dsmovie-container h1{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    font-family: 'Open Sans';
-    font: 700;
-    padding-left: 5em;
-    margin: 0em;
-}
 
-.dsmovie{
-    height: 400px;
-    width: 600px;
-}
