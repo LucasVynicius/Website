@@ -1,4 +1,16 @@
 
+a, a:hover{
+    text-decoration: none;
+    font: bold;
+}
+.navbar-brand{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    padding-bottom: 0;
+    font-size: 1.5rem;
+}
+
 main {
     align-items: center;
     display: flex;
